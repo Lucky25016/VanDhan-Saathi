@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VanDhan Saathi | Team NavaNirman</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f8f1;
+            color: #243524;
+        }
+
+        header {
+            background: #174d35;
+            color: white;
+            padding: 22px 8%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        nav {
+            background: #236744;
+            padding: 14px 8%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 22px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 65px 8%;
+            background: #e1edda;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 700px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #174d35;
+            color: white;
+            padding: 13px 22px;
+            border-radius: 7px;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        section {
+            padding: 40px 8%;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .card h3 {
+            color: #236744;
+        }
+
+        .note {
+            background: #fff4d6;
+            padding: 15px;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+
+        form {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #174d35;
+            color: white;
+            padding: 25px 8%;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 10px 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌿 VanDhan Saathi</h1>
+        <p>A Team NavaNirman Initiative</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Forest Products</a>
+        <a href="#prices">Price Guide</a>
+        <a href="#connect">Buyer Connect</a>
+        <a href="#impact">Our Impact</a>
+    </nav>
+
+    <main>
+
+        <section class="hero" id="home">
+            <h2>Connecting Forest Produce, Empowering Communities</h2>
+
+            <p>
+                VanDhan Saathi is a digital platform concept designed
+                to help forest-produce collectors discover market
+                information and connect with potential buyers.
+            </p>
+
+            <a href="#products" class="button">Explore Products</a>
+            <a href="#connect" class="button">Connect With Us</a>
+        </section>
+
+        <section id="products">
+            <h2>🌳 Forest Products</h2>
+
+            <p>
+                Explore examples of forest products that may be listed
+                on our platform.
+            </p>
+
+            <div class="products">
+
+                <article class="card">
+                    <h3>🌼 Mahua</h3>
+                    <p>View product details and available listings.</p>
+                </article>
+
+                <article class="card">
+                    <h3>🌰 Tamarind (Imli)</h3>
+                    <p>Discover listings and potential buyers.</p>
+                </article>
+
+                <article class="card">
+                    <h3>🍯 Forest Honey</h3>
+                    <p>Explore sample product information.</p>
+                </article>
+
+                <article class="card">
+                    <h3>🌿 Other Forest Produce</h3>
+                    <p>More products can be added in future versions.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2>💰 Market Price Guide</h2>
+
+            <div class="note">
+                <strong>Prototype notice:</strong>
+                Live market prices are not connected yet.
+                Sample prices must be verified with reliable local
+                sources before being used for real buying or selling.
+            </div>
+
+            <p>
+                Future versions can include verified prices,
+                market comparisons, and product availability.
+            </p>
+        </section>
+
+        <section id="connect">
+            <h2>🤝 Buyer & Seller Connect</h2>
+
+            <p>
+                Use this demonstration form to explore how a collector
+                could submit a product listing.
+            </p>
+
+            <form id="listingForm">
+
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="role">I am a</label>
+                <select id="role" required>
+                    <option value="">Select role</option>
+                    <option value="Collector">Forest-produce collector</option>
+                    <option value="Buyer">Buyer</option>
+                </select>
+
+                <label for="product">Product</label>
+                <select id="product" required>
+                    <option value="">Select product</option>
+                    <option value="Mahua">Mahua</option>
+                    <option value="Tamarind">Tamarind (Imli)</option>
+                    <option value="Honey">Forest Honey</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="quantity">Quantity (kg)</label>
+                <input
+                    type="number"
+                    id="quantity"
+                    min="1"
+                    placeholder="Enter quantity"
+                    required
+                >
+
+                <label for="details">Additional details</label>
+                <textarea
+                    id="details"
+                    rows="3"
+                    placeholder="Enter product or listing details"
+                ></textarea>
+
+                <button type="submit" class="button">
+                    Preview Listing
+                </button>
+
+            </form>
+
+            <p id="formMessage" aria-live="polite"></p>
+
+        </section>
+
+        <section id="impact">
+            <h2>📊 Our Intended Impact</h2>
+
+            <div class="products">
+
+                <article class="card">
+                    <h3>Market Awareness</h3>
+                    <p>Make reliable market information easier to find.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Buyer Connections</h3>
+                    <p>Help users discover potential market contacts.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Inclusive Access</h3>
+                    <p>Design a simple, mobile-friendly user experience.</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <strong>VanDhan Saathi | Team NavaNirman</strong>
+        <p>
+            A prototype concept for inclusive rural livelihoods
+            and forest-produce market access.
+        </p>
+        <p>Demonstration website — not yet connected to a live marketplace.</p>
+    </footer>
+
+    <script>
+        const listingForm = document.getElementById("listingForm");
+        const formMessage = document.getElementById("formMessage");
+
+        listingForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const role = document.getElementById("role").value;
+            const product = document.getElementById("product").value;
+            const quantity = document.getElementById("quantity").value;
+
+            formMessage.textContent =
+                "Demo listing preview: " + name +
+                " (" + role + ") selected " + product +
+                ", quantity " + quantity + " kg. " +
+                "This information has not been sent or saved.";
+
+            formMessage.style.background = "#e1edda";
+            formMessage.style.padding = "15px";
+            formMessage.style.borderRadius = "8px";
+        });
+    </script>
+
+</body>
+</html>
